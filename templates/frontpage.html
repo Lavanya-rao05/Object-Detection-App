@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Object Detection App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Playwrite AT", cursive;
+            background: linear-gradient(135deg, #662D8C, #ED1E79);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            background: #36d1dc;
+            background: -webkit-linear-gradient(to right, #36d1dc, #5b86e5);
+            background: linear-gradient(to right, #36d1dc, #5b86e5);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .btn-start {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #ED1E79;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-start:hover {
+            background-color: #662D8C;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="image3.png" height="50px" />
+            <img src="image2.png" height="50px" />
+            <img src="image4.png" height="50px" />
+            <h1 style="font-size: 40px;">Real-Time Object Detection App</h1>
+            <a href="http://127.0.0.1:5001/" class="btn-start">Start Detection By Camera</a>
+            <a href="http://localhost:8501/" class="btn-start">Start Detection By Image</a>
+        </div>
+    </div>
+</body>
+
+</html>

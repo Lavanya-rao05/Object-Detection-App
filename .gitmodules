@@ -1,0 +1,7 @@
+[submodule "ImageDetection-FastApi"]
+    path = ImageDetection-FastApi
+    url = ../ImageDetection-FastApi
+
+[submodule "Object-Detection-App"]
+    path = Object-Detection-App
+    url = ../Object-Detection-App
